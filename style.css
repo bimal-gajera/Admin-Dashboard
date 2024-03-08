@@ -8,7 +8,7 @@ body {
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 5fr;
 }
 
@@ -69,6 +69,91 @@ body {
 
 .header {
   background-color: white;
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  padding: 10px 20px 10px;
+  gap: 10px;
+}
+
+.header-upper {
+  display: grid;
+  grid-template-columns: 0.7fr 500px 2fr 1fr 80px 150px;
+  align-items: center;
+  justify-items: center;
+
+  & .user {
+    font-weight: 700;
+    justify-self: start;
+  }
+
+  & .user-photo {
+    height: 35px;
+  }
+}
+
+.header img {
+  height: 20px;
+}
+
+.search-bar {
+  background-color: #d1d5db;
+  border-radius: 30px;
+  border: none;
+  width: 90%;
+  justify-self: self-start;
+  height: 60%;
+}
+
+.search {
+  justify-self: start;
+  padding: 10px;
+}
+
+#notification {
+  grid-column: 4 / 5;
+}
+
+.header-lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & .user-photo {
+    height: 45px;
+  }
+
+  & .user {
+    font-size: 20px;
+    font-weight: 700
+  }
+}
+
+.hello-user {
+  padding-left: 20px;
+}
+
+.greet {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+
+  & button {
+    background-color: rgb(73, 134, 214);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 35px;
+    width: 90px;
+  }
+}
+
+.user-profile {
+  display: flex;
 }
 
 .main-content {
