@@ -158,4 +158,114 @@ body {
 
 .main-content {
   background-color: #d1d5db;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.main-content-project {
+  padding: 10px;
+}
+
+.project-tag,
+.announcements-tag,
+.trending-tag {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.your-projects {
+  display: grid;
+  overflow: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  min-width: 450px;
+  gap: 20px;
+  padding: 10px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 10px 1fr;
+}
+
+.card-design {
+  background-color: rgb(254, 192, 6);
+  border-radius: 5px 0 0 5px;
+}
+
+.card-detail {
+  padding: 20px;
+}
+
+.project-title {
+  font-weight: 700;
+}
+
+.main-content-updates {
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.announcements {
+  background-color: white;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.announcement-content-card {
+  margin: 10px;
+  padding: 5px;
+}
+
+.announcement-heading {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.announcement-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  border-bottom-color: lightgray;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.trending {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.trending-card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+}
+
+.trending-info {
+  font-size: 12px;
+}
+
+.trending-username {
+  font-weight: 500;
+}
+
+.trending-user-description {
+  color: rgb(92, 92, 92);
+}
+
+.trending-logo img {
+  height: 40px;
 }
