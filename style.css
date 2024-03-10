@@ -175,7 +175,7 @@ body {
 
 .your-projects {
   display: grid;
-  overflow: auto;
+  /* overflow: auto; */
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   min-width: 450px;
@@ -185,17 +185,11 @@ body {
 
 .project-card {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 10px;
+  border-left-color: rgb(254, 192, 6);
+  border-left-width: 10px;
+  border-left-style: solid;
   display: grid;
-  grid-template-columns: 10px 1fr;
-}
-
-.card-design {
-  background-color: rgb(254, 192, 6);
-  border-radius: 5px 0 0 5px;
-}
-
-.card-detail {
   padding: 20px;
 }
 
@@ -268,4 +262,22 @@ body {
 
 .trending-logo img {
   height: 40px;
+}
+
+.project-buttons {
+  padding: 40px 20px 0 20px;
+  justify-self: end;
+  display: flex;
+  gap: 15px;
+
+  & img {
+    height: 25px;
+    width: auto;
+  }
+
+  & button {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+  }
 }
